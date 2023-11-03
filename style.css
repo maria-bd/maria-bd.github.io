@@ -1,0 +1,539 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+h3 {
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+    h2 {
+        color: #8A2BE2;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+       padding: 30px;
+      }
+      h1 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px;
+        font-size: 40px;
+      }
+      p, li, ul, a {
+        color: white;
+        font-size: 20px;
+        line-height: 2;
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+      }
+      .cadre{
+        width: 560px;
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        border: 2px solid #000000; /* Start with a transparent border */
+        border-radius: 10px;
+          box-shadow: 0 0 10px rgba(238, 177, 238, 0.637); /* Initial glow effect */
+      }
+      h6{
+        color: aliceblue;
+        font-size: 18px;
+       margin: 20px;
+      }
+      h5{
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+        border: 4px solid #000000; /* Start with a transparent border */
+        border-radius: 10px;
+          box-shadow: 0 0 10px rgba(180, 49, 255, 0.637); /* Initial glow effect */
+      }
+      strong {
+        color: #9E77ED;
+        border: 4px solid black; /* Start with a transparent border */
+        border-radius: 10px;
+          box-shadow: 0 0 5px rgba(0, 0, 255, 0.7); /* Initial glow effect */
+      }
+      em {
+        color: #b994e3;
+        font-size: 100px;
+        font-family: 'Sacramento' , sans-serif;
+        border: 2px solid #000000; /* Start with a transparent border */
+        border-radius: 10px;
+          text-shadow: 0 0 10px rgba(89, 0, 255, 0.637);
+      }
+    
+/* now the other things */
+
+.navbar {
+  background-color: black;
+  overflow:auto;
+  text-align: center; /* Center align the text links */
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+.navbar a {
+  display: inline-block;
+  color: #9E77ED;
+  padding: 20px 40px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+.navbar li {
+  display: inline-block;
+  text-decoration: none;
+  
+}
+
+/* Change the color of the links when hovered over */
+.navbar a:hover {
+  background-color: #9E77ED;
+  color: #fff;
+}
+
+header {
+  background-color: #000000;
+}
+
+main {
+    background-image: url("back.png");
+    background-repeat: repeat;
+    align-items: center;
+    width: 100%;
+  }
+.title em {
+    text-align: center;
+       }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.mypic{
+  margin-left: 60px;
+  width: 280px;
+  height: 410px;
+}
+.column {
+    flex: 1; /* This will make all columns have equal width */
+    padding: 22px; /* Optional: Add some padding for spacing between columns */
+    width: 33.33%; /* Set the width to 1/3 of the container */
+    float: left;
+    box-sizing: border-box;
+}
+.softwares
+{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+}
+.soft {
+  width: 33.33%; /* Set the width to 1/3 of the container */
+  flex: 1; /* This will make all columns have equal width */
+  padding: 30px; /* Optional: Add some padding for spacing between columns */
+  margin: 20px;
+  box-sizing: border-box;
+}
+.soft{
+  width: 33.33%; /* Set the width to 1/3 of the container */
+  flex: 1; /* This will make all columns have equal width */
+  padding: 30px; /* Optional: Add some padding for spacing between columns */
+  margin: 30px;
+  box-sizing: border-box;
+  font-size: 25px;
+  }
+
+.table{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.content{
+  flex:1;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.event {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #8A2BE2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.event-content {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 400px;
+  background-color: #8A2BE2;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.event:hover .event-content {
+  opacity: 1;
+}
+#event1{
+  left: 20%;
+}
+#event2{
+  left: 50%;
+}
+#event3{
+  left: 80%;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  background-color: #8A2BE2;
+  margin: 0%;
+  padding: 0%;
+  height: 50vh;
+  text-align: center;
+}
+.footer{
+  display: flex;
+}
+.footer ul{
+  list-style: none;
+}
+.footer-column {
+  flex: 1; /* This will make all columns have equal width */
+  padding: 22px; /* Optional: Add some padding for spacing between columns */
+}
+.burger-menu, burger-menu-btn {
+  display: none;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+/* Style the 'bar' elements to represent the hamburger menu lines */
+.menu-toggle .bar {
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  display: block;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Add styles for the 'X' icon */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+
+.menu-toggle {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.menu {
+  width: 100%;
+  top: 0;
+  right: -100%;
+}
+
+.menu.active {
+  right: 0;
+  background-color: #8A2BE2;
+  color: #fff;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: 0.4s;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.menu-toggle.active .bar {
+  background-color: #fff; /* Change color of the bars when the menu is active */
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+  main {
+    background-image: url("iphone.png");
+    background-repeat: repeat;
+    align-items: center;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+navbar{
+  display: none;
+}
+.navbar a {
+    display: none; /* Display links in a block for small screens */
+}
+.title em {
+  text-align: center;
+  font-size: 65px;  }
+  h2 {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  p, li, ul, a {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .column {
+    flex: 1 100%; /* Set flex-grow to 1 and width to 100% to make columns stack vertically */
+    width: 100%;
+    padding: 20px 10px 20px;
+    float: none;
+}
+   .mypic{
+    margin-left:  0px;
+    display: flex;
+    align-content: center;
+    width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: 100%; /* Ensure the image doesn't exceed the container height */
+   }
+
+.soft{
+  flex: 1 100%; /* Set flex-grow to 1 and width to 100% to make columns stack vertically */
+  margin-bottom: 7px;
+  width: 100%;
+  }
+  .soft-work{
+    flex: 1 100%; /* Set flex-grow to 1 and width to 100% to make columns stack vertically */
+    margin-bottom: 7px;
+    width: 100%;
+    }
+  
+.work{
+  display: none;
+}
+/*jjj*/
+.arrow {
+  display: none;
+}
+.content{
+  flex:1;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: left;
+  padding-left: 34px;
+  margin: 0px; ;
+}
+
+.event {
+  flex: 1 100%;
+  float: none;
+  cursor: none;
+  position: relative;
+  top: -60px;
+  bottom: 0px;
+  transform: none;
+  width: none;
+  height: none;
+  border:none;
+  border-radius: none;
+  z-index: none;
+  padding: 10px;
+  padding-right: 0px;
+  margin:0% ;
+
+}
+
+.event-date {
+ display: none;
+}
+
+.event-content {
+  position:relative;
+  top: 50px;
+  bottom: 0px;
+  left: 0%;
+  transform: none;
+  padding: 20px;
+  width: 300px;
+  background-color: #8A2BE2;
+  color: #fff;
+  border-radius: 5px;
+  opacity:unset;
+  transition: none;
+  margin:0% ;
+}
+#event1{
+  left: 0%;
+  right: 0%;
+}
+#event2{
+  left: 0%;
+  right: 0%;
+}
+#event3{
+  left: 0%;
+  right: 0%;
+}
+
+.event:hover .event-content {
+  opacity: none;
+}
+
+.tiktok-embed{
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 5px 0px 5px;
+}
+.ytb{
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 5px 0px 5px;
+}
+.cadre{
+  width: 96%;
+  padding: 5px 0px 5px;
+  margin: 0%;
+  font-size: 15px;
+}
+.table{
+  display: block;
+  align-items: center;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #8A2BE2;
+  height: 32vh;
+}
+footer h3{
+  font-size: 25px;
+}
+footer p{
+  font-size: 20px;
+}
+.footer-column {
+  flex: 1 100%; /* Set flex-grow to 1 and width to 100% to make columns stack vertically */
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 100%;
+}
+#footer-contact{
+  display: none;
+}
+.copyright {
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px 0px 0px;
+}
+}
+/* Media query for screens with a maximum width of 400px */
+@media only screen and (max-width: 400px) {
+  /* Add styles for even smaller screens if needed */
+}
